@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(2, 2, 2);
+  color: white;
+}
+
+/* Frame Styles */
+.frame {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  height: 400px; /* Fixed height for the frame */
+  border: 2px solid white;
+  padding: 10px;
+  margin: 20px auto;
+  overflow: hidden; /* Ensures text outside the frame is hidden */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Text Styles */
+p {
+  font-size: 13px;
+  line-height: 10px; /* Adjusted to remove gaps */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  text-align: center; /* Center-align the text */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  margin: 0;
+  height: 100%; /* Ensures the text fills the frame */
+  overflow: hidden; /* Hides overlapping text */
+}
+
+/* Controls Styles */
+.controls {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.controls input,
+.controls textarea {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+.controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
