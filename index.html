@@ -56,7 +56,9 @@
           reader.readAsDataURL(fileInput.files[0]);
         }
 
-        textPortrait.textContent = textInput;
+        // Repeat the text to fill the frame
+        const repeatedText = textInput.repeat(1000); // Arbitrary large number to ensure it fills the frame
+        textPortrait.textContent = repeatedText;
       }
 
       // Adjust Font Size
